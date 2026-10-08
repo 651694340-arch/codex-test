@@ -3,18 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="我的第一个 Codex 网站，点击按钮测试交互。">
-  <title>我的第一个 Codex 网站</title>
+  <meta name="description" content="映序 AI，把灵感变成画面。探索文字成片、镜头设计与多风格创作，开启你的下一部作品。">
+  <title>映序 AI — 让灵感，成为下一帧</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23c8f58b'/%3E%3Cpath d='M24 17L48 32L24 47Z' fill='%23111410'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <main class="card">
-    <div class="status-icon" aria-hidden="true">✓</div>
-    <p class="eyebrow">我的第一个 Codex 网站</p>
-    <h1>我的第一个 AI 网站</h1>
-    <p class="description">一切准备就绪，点击下方按钮测试一下。</p>
-    <button id="test-button" type="button">开始体验</button>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <header class="header wrap">
+    <a class="logo" href="#" aria-label="映序 AI 首页"><span class="logo-mark" aria-hidden="true">◩</span> 映序<span class="logo-ai">AI</span></a>
+    <nav aria-label="主导航"><a href="#features">创作能力</a><a href="#showcase">灵感案例</a><a href="#workflow">创作流程</a></nav>
+    <a class="button small" href="#create">开始创作 <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="main">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot"></span> 为想象力，打开新的可能</p>
+        <h1>让灵感，<br>成为<span>下一帧。</span></h1>
+        <p class="intro">从一句描述到一段故事，让 AI 释放你的创作潜力。<br class="desktop">把时间留给想象，把画面交给映序。</p>
+        <div class="hero-actions"><a class="button" href="#create">开始创作 <span aria-hidden="true">↗</span></a><a class="text-link" href="#showcase"><span aria-hidden="true">▷</span> 探索创作灵感</a></div>
+        <p class="hero-note">文字驱动 · 多种风格 · 无限灵感</p>
+      </div>
+      <div class="hero-art landscape" role="img" aria-label="抽象日落山峦与绿色星球，呈现电影感的视觉灵感">
+        <span class="art-label">IMAGINATION IN MOTION</span><div class="orb"></div><div class="ridge back"></div><div class="ridge front"></div>
+        <div class="art-caption"><span>越过想象的边界</span><span>01 / 03</span></div>
+        <div class="prompt-chip"><span aria-hidden="true">✦</span> 日落时分，探索一颗未知星球</div>
+      </div>
+    </section>
+    <div class="strip wrap"><span>你的想象力，是唯一的起点。</span><span>从想法到画面 <span aria-hidden="true">———————— ↗</span></span></div>
+    <section id="features" class="section wrap">
+      <div class="section-heading"><div><p class="eyebrow">01 / 创作能力</p><h2>好故事，从不受限。</h2></div><p>让繁复的制作更轻盈，<br>让每一个想法都有表达的空间。</p></div>
+      <div class="feature-grid">
+        <article class="feature"><span class="feature-icon" aria-hidden="true">✦</span><h3>文字，变成画面</h3><p>描述场景、氛围与细节，从第一句话开始，构思属于你的视觉故事。</p><span class="feature-tag">文字成片</span></article>
+        <article class="feature"><span class="feature-icon" aria-hidden="true">⌘</span><h3>每一帧，都有你的风格</h3><p>电影质感、梦幻动画、未来科技，探索不同视觉语言，让表达更鲜明。</p><span class="feature-tag">多风格探索</span></article>
+        <article class="feature"><span class="feature-icon" aria-hidden="true">↗</span><h3>用镜头，讲好故事</h3><p>从缓慢推进到广角全景，为场景规划镜头运动，让叙事更有节奏。</p><span class="feature-tag">镜头设计</span></article>
+      </div>
+    </section>
+    <section id="showcase" class="section wrap">
+      <div class="section-heading"><div><p class="eyebrow">02 / 灵感案例</p><h2>下一部作品，始于此刻。</h2></div><a class="text-link" href="#create">尝试你的想法 <span aria-hidden="true">↗</span></a></div>
+      <div class="case-grid">
+        <article class="case"><div class="case-art landscape desert" role="img" aria-label="暖橙色落日与沙丘的概念画面"><div class="orb"></div><div class="ridge back"></div><div class="ridge front"></div><span class="case-badge">电影感</span></div><div class="case-info"><h3>沙海的最后一束光</h3><button class="case-button" data-prompt="落日下的金色沙丘，微风扬起细沙，镜头缓慢推进，温暖的电影光影" data-style="cinematic" aria-label="使用沙海的最后一束光的创作提示">↗</button></div><p>自然叙事 / 暖色光影</p></article>
+        <article class="case"><div class="case-art city" role="img" aria-label="紫色夜空中未来城市的抽象概念画面"><div class="moon"></div><div class="buildings"></div><span class="case-badge">未来视界</span></div><div class="case-info"><h3>凌晨三点，城市未眠</h3><button class="case-button" data-prompt="未来城市的紫色夜空，霓虹映照高楼，镜头从街道升向天际，科幻电影风格" data-style="future" aria-label="使用凌晨三点城市未眠的创作提示">↗</button></div><p>城市想象 / 霓虹氛围</p></article>
+        <article class="case"><div class="case-art dream" role="img" aria-label="粉色与蓝色交织的梦幻轨道概念画面"><div class="dream-orb"></div><div class="orbit"></div><span class="case-badge">梦境漫游</span></div><div class="case-info"><h3>漂浮在梦的边缘</h3><button class="case-button" data-prompt="柔和粉蓝色的梦幻宇宙，透明星球漂浮在云层之间，镜头轻轻环绕，超现实动画风格" data-style="dream" aria-label="使用漂浮在梦的边缘的创作提示">↗</button></div><p>超现实表达 / 柔和色彩</p></article>
+      </div>
+      <p class="section-note">概念视觉展示 · 点击案例箭头，使用对应提示开始构思。</p>
+    </section>
+    <section id="workflow" class="section wrap workflow">
+      <div><p class="eyebrow">03 / 创作流程</p><h2>从一个念头，<br>到一段故事。</h2></div>
+      <ol class="steps"><li><span>01</span><div><h3>写下你的灵感</h3><p>用自己的语言描述场景，细节越丰富，方向越清晰。</p></div></li><li><span>02</span><div><h3>找到视觉风格</h3><p>选择氛围与风格，赋予故事独特的视觉语言。</p></div></li><li><span>03</span><div><h3>准备你的创作方案</h3><p>整理提示与镜头建议，为视频制作做好准备。</p></div></li></ol>
+    </section>
+    <section id="create" class="section wrap create-section">
+      <p class="eyebrow">你的下一部作品</p><h2>现在，让想象发生。</h2><p class="intro">写下一个场景，迈出创作的第一步。</p>
+      <form id="create-form" class="creator">
+        <label for="prompt">你想创造怎样的画面？</label>
+        <textarea id="prompt" name="prompt" rows="3" maxlength="1000" required placeholder="例如：清晨的海边，一位旅人走向远方，柔和的光线，镜头缓慢拉远……"></textarea>
+        <div class="creator-controls"><div><label for="style">视觉风格</label><select id="style" name="style"><option value="cinematic">电影质感</option><option value="future">未来科技</option><option value="dream">梦幻动画</option></select></div><button class="button" type="submit">开始创作 <span aria-hidden="true">↗</span></button></div>
+        <p class="demo-note">当前为创作方案演示，可生成并复制文字方案；尚未接入 AI 视频生成服务。</p>
+      </form>
+      <div id="result" class="result" hidden aria-live="polite"><h3>你的创作方案已准备好</h3><p id="result-text"></p><button class="text-link" type="button" id="copy-button">复制方案 ↗</button><span id="copy-status" role="status"></span></div>
+    </section>
   </main>
+  <footer class="footer wrap"><a class="logo" href="#">◩ 映序<span class="logo-ai">AI</span></a><p>让灵感，成为下一帧。</p><span>© <span id="year">2026</span> 映序 AI</span></footer>
 </body>
 </html>
